@@ -427,7 +427,7 @@ section .content div {
     justify-content: center;
     align-items: center;
     height: 270px;
-    background-image: url(/images/BAC.png);
+    background-image: url(/../images/BAC.png);
     background-size: 100% 100%;
 }
 
