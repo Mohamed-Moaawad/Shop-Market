@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- style -->
+        <link rel="stylesheet" href="css/checkout/checkout.css"  media="(prefers-color-scheme: light)">
+        <!-- dark mood -->
+        <link  rel="stylesheet"  href="css/checkout/dark.css"  media="(prefers-color-scheme: dark)"/>
+        <!-- font-awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <title>checkout</title>
+    </head>
+<body>
+        <!-- nav -->
+        <nav>
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="logo col-lg-2 col-sm-6 ">
+                        <img src="./images/logo.png" alt="">
+                    </div>
+                    <div class="links col-lg-7 " id="links">
+                        <span onclick="closenav()">&#935;</span>
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="shop.html">Product</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="chatbot.html">Chat</a> 
+                    </div>
+                    <div class="butn col-lg-3 col-sm-6 d-flex justify-content-end">
+                        <button onclick="openpage()">Sign Up</button>
+                        <i class="fa-sharp fa-solid fa-bars" onclick="opnenav()"></i>
+                    </div>
+                </div>
+            </div>  
+            <div class="colors" id="colors">
+                <h5 class="text-center mt-3 mb-3 text-uppercase fw-bold">color skins</h5>
+                <div class="color">
+                            <div class="dd">
+                                <div class="ogrn" onclick="orgncolor()"></div>
+                                <div class="blu" onclick="bluColor()"></div>
+                                <div class="gren" onclick="grenColor()"></div>
+                            </div>
+                            <div class="dd">
+                                <div class="red" onclick="redColor()"></div>
+                                <div class="ored" onclick="oredColor()"></div>
+                                <div class="lbne" onclick="lbueColor()"></div>
+                            </div>
+                </div>
+                <div class="toggle" onclick="dark()">
+                    <input type="checkbox" />
+                    <label for="toggleBtn">
+                        <img src="/images/sun.png" alt="sun icon"  class="icon sun" />
+                        <img src="/images/moon.png" alt="moon icon"  class="icon moon" />
+                    </label>
+                </div>
+                <button onclick="boxedbody()">boxed</button>
+                <span class="setng" onclick="opnecolor()">
+                    <i class="fa-solid fa-gear"></i>
+                </span>
+            </div>
+            <hr>
+        </nav>
+        <!-- end nav -->
+        <section class="pt-5 pb-5">
+            <div class="container pb-5">
+                <h2 class="mb-5"><span>getting</span> your order</h2>
+                <div class="row">
+                    <div class="col-lg-5 col-md-6 col-sm-12 mt-5">
+                        <div class="form1">
+                            <h3>shipping information</h3>
+                            <div class="name">
+                                <label for="">full name</label>
+                                <input type="text" placeholder="your name">
+                            </div>
+                            <div class="address">
+                                <label for="">address</label>
+                                <input type="text" placeholder="address">
+                            </div>
+                            <div class="city">
+                                <label for="">city</label>
+                                <input list="city" placeholder="">
+                                <datalist id="city">
+                                    <option value="Cairo"></option>
+                                    <option value="Alexandria"></option>
+                                    <option value="Gizeh"></option>
+                                    <option value="Suez"></option>
+                                    <option value="Luxor"></option>
+                                    <option value="Port Saaid"></option>
+                                    <option value="Aswan"></option>
+                                    <option value="Qena"></option>
+                                </datalist>
+                            </div>
+                            <div class="code ">
+                                <div class="one">
+                                    <label for="">State</label>
+                                    <input type="text">
+                                    <span>
+                                        <input type="checkbox" name="" id=""> <h6>save this as my billing address</h6>
+                                    </span>
+                                    
+                                </div>
+                                <div class="tow">
+                                    <label for="">ZIP Code</label>
+                                    <input type="text" placeholder="###">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form2 mt-5">
+                            <h3 class="mb-4">contact information</h3>
+                            <div class="email">
+                                <label for="">email</label>
+                                    <input type="email" placeholder="enter your email">
+                                
+                            </div>
+                            <div class="phone">
+                                <label for="">phone number</label>
+                                    <input type="text" placeholder="enter your phone">
+                                    <span>
+                                        <input type="checkbox" name="" id="">
+                                        <h6> text me updates about my best buy order</h6>
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-6 col-sm-12 mt-5  d-flex flex-column justify-content-start align-items-center">
+                        <h3 class="fw-bold text-capitalize mb-4">order summary</h3>
+                        <div class="imgs">
+                            <h5 class="text-capitalize fw-bold mb-4 fs-4">shipping</h5>
+                            <div class="img d-flex justify-content-between align-items-center">
+                                <div class="im">
+                                    <img width="100px" src="./images/apple-watch-series-3-apple-watch-series-2-b-h-photo-video-smartwatch-smart-c66e6ce33aa17cbbbee25664e15b27eb.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <h6>apple watch</h6>
+                                    <p>there are many things are 
+                                        needed to start the gadhet
+                                        business
+                                    </p>
+                                </div>
+                                <div class="num">
+                                    <span>$210</span>
+                                    <h5>remove</h5>
+                                </div>
+                            </div>
+                            <div class="img d-flex justify-content-between align-items-center">
+                                <div class="im">
+                                    <img width="100px" src="./images/black-headphones-digital-device.jpg" alt="">
+                                </div>
+                                <div class="text">
+                                    <h6>apple watch</h6>
+                                    <p>there are many things are 
+                                        needed to start the gadhet
+                                        business
+                                    </p>
+                                </div>
+                                <div class="num">
+                                    <span>$188</span>
+                                    <h5>remove</h5>
+                                </div>
+                            </div>
+                            <div class="img d-flex justify-content-between align-items-center">
+                                <div class="im">
+                                    <img width="100px" src="./images/nikon-d700-nikon-d300-digital-slr-camera-slr-d58487babe8f79aec698c51c549d0a01.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <h6>apple watch</h6>
+                                    <p>there are many things are 
+                                        needed to start the gadhet
+                                        business
+                                    </p>
+                                </div>
+                                <div class="num">
+                                    <span>$199</span>
+                                    <h5>remove</h5>
+                                </div>
+                            </div>
+                            <div class="img d-flex justify-content-between align-items-center">
+                                <div class="im">
+                                    <img width="100px" src="./images/whatch-blue.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <h6>apple watch</h6>
+                                    <p>there are many things are 
+                                        needed to start the gadhet
+                                        business
+                                    </p>
+                                </div>
+                                <div class="num">
+                                    <span>$185</span>
+                                    <h5>remove</h5>
+                                </div>
+                            </div>
+                            <div class="img d-flex justify-content-between align-items-center">
+                                <div class="im">
+                                    <img width="100px" src="./images/mouse-blue.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <h6>apple watch</h6>
+                                    <p>there are many things are 
+                                        needed to start the gadhet
+                                        business
+                                    </p>
+                                </div>
+                                <div class="num">
+                                    <span>$108</span>
+                                    <h5>remove</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="but">
+                    <a href="order.html"><button>continue to payment information</button></a>
+                </div>
+            </div>    
+        </section>
+
+        <!-- footer -->
+        <footer>
+            <div class="container">
+                <div class="row pb-5 ">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="links one">
+                            <h4>company logo</h4>
+                            <h5>newsletters sign up</h5>
+                            <h6>sign up for least news & offers</h6>
+                            <div class="inp">
+                                <input type="email" placeholder="your email address">
+                                <span>
+                                    <i class="fa-sharp fa-solid fa-envelope"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="links tow">
+                            <h4>categories</h4>
+                            <a href="#">headphones</a>
+                            <a href="#">smart watch</a>
+                            <a href="#">mouse</a>
+                            <a href="#">camera</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="links three">
+                            <h4>about us</h4>
+                            <a href="#">license</a>
+                            <a href="#">policy</a>
+                            <a href="#">terms of use</a>
+                            <a href="#">help</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="links four">
+                            <h4>contact us</h4>
+                            <a href="#">+2 01062026826</a>
+                            <a href="#">mohamedmoawad531@icloud.com</a>
+                            <div class="iconss d-flex justify-content-between mt-5">
+                                <span class="face">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </span>
+                                <span class="linkd">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </span>
+                                <span class="insta">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </span>
+                                <span class="yout">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </span>
+                                <span class="whats">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>copyright pebisnis <span>( Mohamed Moawad )</span> all right reserved</p>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+
+        
+    <div class="loader" id="load">
+        <div class="ring">
+            <span>loading...</span>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/check.js"></script>
+</body>
+</html>

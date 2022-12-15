@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- style -->
+        <link rel="stylesheet" href="css/about/about-style.css" media="(prefers-color-scheme: light)">
+        <!-- dark style -->
+        <link  rel="stylesheet"  href="css/about/dark.css" media="(prefers-color-scheme: dark)"/>
+        <!-- font-awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <!-- wow -->
+        <link rel="stylesheet" href="/WOW-master/css/libs/animate.css">
+        <title>About</title>
+    </head>
+<body>
+        <!-- nav -->
+        <nav class="position-relative">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="logo col-lg-2 col-sm-6 ">
+                        <img src="./images/logo.png" alt="">
+                    </div>
+                    <div class="links col-lg-7 " id="links">
+                        <span onclick="closenav()">&#935;</span>
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="shop.html">Product</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="chatbot.html">Chat</a>
+                    </div> 
+                    <div class="butn col-lg-3 col-sm-6 d-flex justify-content-end">
+                        <button onclick="openpage()">Sign Up</button>
+                        <i class="fa-sharp fa-solid fa-bars" onclick="opnenav()"></i>
+                    </div>
+                </div>
+            </div>    
+            <div class="colors" id="colors">
+                <h5 class="text-center mt-3 mb-3 text-uppercase fw-bold">color skins</h5>
+                <div class="color">
+                            <div class="dd">
+                                <div class="ogrn" onclick="orgncolor()"></div>
+                                <div class="blu" onclick="bluColor()"></div>
+                                <div class="gren" onclick="grenColor()"></div>
+                            </div>
+                            <div class="dd">
+                                <div class="red" onclick="redColor()"></div>
+                                <div class="ored" onclick="oredColor()"></div>
+                                <div class="lbne" onclick="lbueColor()"></div>
+                            </div>
+                </div>
+                <div class="toggle" onclick="dark()">
+                    <input type="checkbox" />
+                    <label for="toggleBtn">
+                        <img src="/images/sun.png" alt="sun icon"  class="icon sun" />
+                        <img src="/images/moon.png" alt="moon icon"  class="icon moon" />
+                    </label>
+                </div>
+                <button onclick="boxedbody()">boxed</button>
+                <span class="setng" onclick="opnecolor()">
+                    <i class="fa-solid fa-gear"></i>
+                </span>
+            </div>
+        
+            <hr>
+        </nav>
+        <!-- end nav -->
+
+        <section class="about-me">
+            <div class="container pb">
+                <h2 class="text-center text-capitalize fw-bold"><span>about</span> us</h2>
+                <div class="row pb-5 pt-5"> 
+                    <div class="col-lg-6 col-md-6 col-sm-12 mb-5 d-flex justify-content-center align-items-center">
+                        <div class="text wow fadeInLeft">
+                            <h3>our vision</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt voluptatibus laboriosam 
+                                sint odit fugiat neque. Pariatur ut ab nisi illum architecto voluptate enim unde est 
+                                quia nihil! Magnam perspiciatis libero autem blanditiis molestias. Maiores saepe maxime 
+                                dolor dolorum obcaecati assumenda fuga, voluptatibus hic quasi, provident officiis dignissimos.
+                                <br>
+                                <br>
+                                Laudantium quidem inventore laboriosam eos neque amet eum, enim excepturi sequi odio doloremque 
+                                velit ab ullam? Nisi voluptatem quidem asperiores illum odio amet numquam quod distinctio laborum 
+                                sunt fugiat ipsum, mollitia consequuntur quaerat.
+                            </p>
+                            <button>read more</button>
+                        </div>
+                    </div> 
+                    <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="img wow fadeInRight">
+                            <img src="images/team-about-img.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row pb-5 pt-5">
+                    <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="img wow fadeInLeft">
+                            <img src="images/about-2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 mb-5 d-flex justify-content-center align-items-center">
+                        <div class="text ms-5 wow fadeInRight">
+                            <h3>our approch</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt voluptatibus laboriosam 
+                                sint odit fugiat neque. Pariatur ut ab nisi illum architecto voluptate enim unde est 
+                                quia nihil! Magnam perspiciatis libero autem blanditiis molestias. Maiores saepe maxime 
+                                dolor dolorum obcaecati assumenda fuga, voluptatibus hic quasi, provident officiis dignissimos.
+                                <br>
+                                <br>
+                                Laudantium quidem inventore laboriosam eos neque amet eum, enim excepturi sequi odio doloremque 
+                                velit ab ullam? Nisi voluptatem quidem asperiores illum odio amet numquam quod distinctio laborum 
+                                sunt fugiat ipsum, mollitia consequuntur quaerat.
+                            </p>
+                            <button>read more</button>
+                        </div>
+                    </div> 
+                    
+                </div>
+                <div class="row pb-5 pt-5">
+                    <div class="col-lg-6 col-md-6 col-sm-12 mb-5 d-flex justify-content-center align-items-center">
+                        <div class="text wow fadeInLeft">
+                            <h3>our pro</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt voluptatibus laboriosam 
+                                sint odit fugiat neque. Pariatur ut ab nisi illum architecto voluptate enim unde est 
+                                quia nihil! Magnam perspiciatis libero autem blanditiis molestias. Maiores saepe maxime 
+                                dolor dolorum obcaecati assumenda fuga, voluptatibus hic quasi, provident officiis dignissimos.
+                                <br>
+                                <br>
+                                Laudantium quidem inventore laboriosam eos neque amet eum, enim excepturi sequi odio doloremque 
+                                velit ab ullam? Nisi voluptatem quidem asperiores illum odio amet numquam quod distinctio laborum 
+                                sunt fugiat ipsum, mollitia consequuntur quaerat.
+                            </p>
+                            <button>read more</button>
+                        </div>
+                    </div> 
+                    <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="img wow fadeInRight">
+                            <img src="images/group-people-working-out-business-plan-office.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </section>
+
+        <!-- passions -->
+        <section class="passions position-relative">
+            <div class="container pb-5">
+                <div class="row pt-5">
+                    <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+                        <div class="icon wow bounceInLeft">
+                            <div class="img-icon one">
+                                <img src="./images/icon-madel.png" alt="">
+                            </div>
+                            
+                            <div class="text">
+                                <h4>secure payment</h4>
+                                <p>it can be very secure path to earn good money 
+                                    and make you very successful ceative
+                                    antreperneur
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center ">
+                        <div class="icon wow bounceInUp">
+                            <div class="img-icon tow">
+                                <img src="./images/icon-car.png" alt="">
+                            </div>
+                            
+                            <div class="text">
+                                <h4>free delivery</h4>
+                                <p>it can be very secure path to earn good money 
+                                    and make you very successful ceative
+                                    antreperneur
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+                        <div class="icon wow bounceInRight">
+                            <div class="img-icon three">
+                                    <img src="./images/verified-300x300-removebg-preview.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h4>quality gadgets</h4>
+                                <p>it can be very secure path to earn good money 
+                                    and make you very successful ceative
+                                    antreperneur
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end passions -->
+
+        
+        <!-- footer -->
+        <footer>
+            <div class="container">
+                <div class="row pb-5 ">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="links one">
+                            <h4>company logo</h4>
+                            <h5>newsletters sign up</h5>
+                            <h6>sign up for least news & offers</h6>
+                            <div class="inp">
+                                <input type="email" placeholder="your email address">
+                                <span>
+                                    <i class="fa-sharp fa-solid fa-envelope"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="links tow">
+                            <h4>categories</h4>
+                            <a href="#">headphones</a>
+                            <a href="#">smart watch</a>
+                            <a href="#">mouse</a>
+                            <a href="#">camera</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="links three">
+                            <h4>about us</h4>
+                            <a href="#">license</a>
+                            <a href="#">policy</a>
+                            <a href="#">terms of use</a>
+                            <a href="#">help</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="links four">
+                            <h4>contact us</h4>
+                            <a href="#">+2 01062026826</a>
+                            <a href="#">mohamedmoawad531@icloud.com</a>
+                            <div class="iconss d-flex justify-content-between mt-5">
+                                <span class="face">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </span>
+                                <span class="linkd">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </span>
+                                <span class="insta">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </span>
+                                <span class="yout">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </span>
+                                <span class="whats">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>copyright pebisnis <span>( Mohamed Moawad )</span> all right reserved</p>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+
+        
+    <div class="loader" id="load">
+        <div class="ring">
+            <span>loading...</span>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/about.js"></script>
+     <!-- wow -->
+     <script src="/WOW-master/dist/wow.min.js"></script>
+     <script>
+     new WOW().init();
+      </script>
+</body>
+</html>

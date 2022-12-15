@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style -->
+    <link rel="stylesheet" href="css/chat-bot/chatbot.css" media="(prefers-color-scheme: light)">
+    <!-- dark mood -->
+    <link  rel="stylesheet"  href="css/chat-bot/dark.css"  media="(prefers-color-scheme: dark)"/>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>ChatBot</title>
+</head>
+<body>
+        <!-- nav -->
+        <nav>
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="logo col-lg-2 col-sm-6 ">
+                            <img src="./images/logo.png" alt="">
+                        </div>
+                        <div class="links col-lg-7 " id="links">
+                            <span onclick="closenav()">&#935;</span>
+                            <a href="index.html">Home</a>
+                            <a href="about.html">About</a>
+                            <a href="shop.html">Product</a>
+                            <a href="contact.html">Contact</a>
+                            <a href="chatbot.html">Chat</a>
+                        </div>
+                        <div class="butn col-lg-3 col-sm-6 d-flex justify-content-end">
+                            <button onclick="openpage()">Sign Up</button>
+                            <i class="fa-sharp fa-solid fa-bars" onclick="opnenav()"></i> 
+                        </div>                    </div>
+                </div> 
+                <div class="colors" id="colors">
+                    <h5 class="text-center mt-3 mb-3 text-uppercase fw-bold">color skins</h5>
+                    <div class="color">
+                                <div class="dd">
+                                    <div class="ogrn" onclick="orgncolor()"></div>
+                                    <div class="blu" onclick="bluColor()"></div>
+                                    <div class="gren" onclick="grenColor()"></div>
+                                </div>
+                                <div class="dd">
+                                    <div class="red" onclick="redColor()"></div>
+                                    <div class="ored" onclick="oredColor()"></div>
+                                    <div class="lbne" onclick="lbueColor()"></div>
+                                </div>
+                    </div>
+                    <div class="toggle" onclick="dark()">
+                        <input type="checkbox" />
+                        <label for="toggleBtn">
+                            <img src="/images/sun.png" alt="sun icon"  class="icon sun" />
+                            <img src="/images/moon.png" alt="moon icon"  class="icon moon" />
+                        </label>
+                    </div>
+                    <button onclick="boxedbody()">boxed</button>
+                    <span class="setng" onclick="opnecolor()">
+                        <i class="fa-solid fa-gear"></i>
+                    </span>
+                </div>
+        </nav>
+        <!-- end nav -->
+        <section class="pt-5">
+            <div class="container mt-4">
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-6 col-md-12 col-sm-12 mb-5 position-relative">
+                        <h4>Chat</h4>
+                        <h1>Talk to <span>Jessica</span></h1>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12  position-relative ">
+
+                        <div class="bot-app position-relative">
+                            <div class="info d-flex justify-content-between align-items-center">
+                                <div class="img">
+                                    <div>
+                                        <img  src="images/chatbot-logo-removebg-preview.png" alt="">
+                                    </div>
+                                    <span>chat with
+                                        <span>Jessica</span>
+                                    </span>
+                                </div>
+                                <div class="icon pe-5">
+                                    <i class="fa-sharp fa-solid fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="chat" id="chat-body">
+                                
+                            </div>
+                            <form autocomplete="off">
+                                <input id="message" type="text" placeholder="Enter your message...">
+                                <div class="send">
+                                    <input id="send" type="submit" value="">
+                                        <i class="fa-sharp fa-solid fa-paper-plane"></i>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+    <div class="loader" id="load">
+        <div class="ring">
+            <span>loading...</span>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/chatbot.js"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- style -->
+        <link rel="stylesheet" href="css/order/order-style.css"  media="(prefers-color-scheme: light)">
+        <!-- dark mood -->
+        <link  rel="stylesheet"  href="css/order/dark.css"  media="(prefers-color-scheme: dark)"/>
+        <!-- font-awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <title>order</title>
+    </head>
+<body>
+    <!-- nav -->
+    <nav>
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="logo col-lg-2 col-sm-6 ">
+                        <img src="./images/logo.png" alt="">
+                    </div>
+                    <div class="links col-lg-7 " id="links">
+                        <span onclick="closenav()">&#935;</span>
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="shop.html">Product</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="chatbot.html">Chat</a>
+                    </div>
+                    <div class="butn col-lg-3 col-sm-6 d-flex justify-content-end">
+                        <button onclick="openpage()">Sign Up</button>
+                        <i class="fa-sharp fa-solid fa-bars" onclick="opnenav()"></i>
+                    </div>
+                </div>
+            </div>    
+
+
+
+            <div class="colors" id="colors">
+                <h5 class="text-center mt-3 mb-3 text-uppercase fw-bold">color skins</h5>
+                <div class="color">
+                            <div class="dd">
+                                <div class="ogrn" onclick="orgncolor()"></div>
+                                <div class="blu" onclick="bluColor()"></div>
+                                <div class="gren" onclick="grenColor()"></div>
+                            </div>
+                            <div class="dd">
+                                <div class="red" onclick="redColor()"></div>
+                                <div class="ored" onclick="oredColor()"></div>
+                                <div class="lbne" onclick="lbueColor()"></div>
+                            </div>
+                </div>
+                <div class="toggle" onclick="dark()">
+                    <input type="checkbox" />
+                    <label for="toggleBtn">
+                        <img src="/images/sun.png" alt="sun icon"  class="icon sun" />
+                        <img src="/images/moon.png" alt="moon icon"  class="icon moon" />
+                    </label>
+                </div>
+                <button onclick="boxedbody()">boxed</button>
+                <span class="setng" onclick="opnecolor()">
+                    <i class="fa-solid fa-gear"></i>
+                </span>
+            </div>
+            <hr>
+    </nav>
+    <!-- end nav -->
+
+    <!-- order -->
+    <section class="order">
+        <h2><span>order track</span> screen</h2>
+        <div class="container">
+            <div class="row text-center d-flex justify-content-center">
+                <div class="ord d-flex justify-content-between pb-5 pt-5">
+                    <div class="delr">
+                        <div>
+                            <img src="images/icon-box.png" width="100px" alt=""><span></span>
+                        </div>
+                        <h5 class="ms-2">parcal</h5>
+                    </div>
+                    <div class="delr">
+                        <div>
+                            <img src="images/icon-car.png" width="100px" alt="">
+                        </div>
+                        <h5 class="ms-3">rider</h5>
+                    </div>
+                    <div class="delr">
+                        <div class="don">
+                            <i class="fa-sharp fa-solid fa-check"></i>
+                        </div>
+                        <h5>delivered</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="ifrm col-12">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d108522.53695554359!2d31.397497327937!3d30.02830000224581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x14583cc75436d909%3A0x7f921d4528ec3e03!2z2KfZhNiq2KzZhdi5INin2YTYrtin2YXYs9iMINmF2K3Yp9mB2LjYqSDYp9mE2YLYp9mH2LHYqeKArA!3m2!1d30.0084868!2d31.4284756!4m5!1s0x1458412f5afd9eef%3A0x5c595eef15fc8a18!2zMjZWUCtRNzUg2YXZitiv2KfZhiDYp9mE2KrYrdix2YrYsdiMINmF2YrYr9in2YYg2KfZhNiq2K3YsdmK2LHYjNiMINi52KfYqNiv2YrZhtiMINmF2K3Yp9mB2LjYqSDYp9mE2YLYp9mH2LHYqeKArA!3m2!1d30.0443994!2d31.235718799999997!5e1!3m2!1sar!2seg!4v1670367005482!5m2!1sar!2seg" 
+                    width="100%" height="90%" style="border:0;" allowfullscreen="" 
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="bttn text-center pb-5 mb-5">
+                <a href="thanks.html"><button>done</button></a>
+            </div>
+            
+        </div>
+    </section>
+    <!-- end order -->
+
+    <!-- footer -->
+    <footer>
+            <div class="container">
+                <div class="row pb-5 ">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="links one">
+                            <h4>company logo</h4>
+                            <h5>newsletters sign up</h5>
+                            <h6>sign up for least news & offers</h6>
+                            <div class="inp">
+                                <input type="email" placeholder="your email address">
+                                <span>
+                                    <i class="fa-sharp fa-solid fa-envelope"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="links tow">
+                            <h4>categories</h4>
+                            <a href="#">headphones</a>
+                            <a href="#">smart watch</a>
+                            <a href="#">mouse</a>
+                            <a href="#">camera</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="links three">
+                            <h4>about us</h4>
+                            <a href="#">license</a>
+                            <a href="#">policy</a>
+                            <a href="#">terms of use</a>
+                            <a href="#">help</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="links four">
+                            <h4>contact us</h4>
+                            <a href="#">+2 01062026826</a>
+                            <a href="#">mohamedmoawad531@icloud.com</a>
+                            <div class="iconss d-flex justify-content-between mt-5">
+                                <span class="face">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </span>
+                                <span class="linkd">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </span>
+                                <span class="insta">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </span>
+                                <span class="yout">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </span>
+                                <span class="whats">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>copyright pebisnis <span>( Mohamed Moawad )</span> all right reserved</p>
+                </div>
+            </div>
+    </footer>
+    <!-- end footer -->
+
+
+        
+    <div class="loader" id="load">
+        <div class="ring">
+            <span>loading...</span>
+        </div>
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/order.js"></script>
+</body>
+</html>

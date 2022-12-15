@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- style -->
+        <link rel="stylesheet" href="css/details/details-style.css"  media="(prefers-color-scheme: light)">
+        <!-- dark mood -->
+        <link  rel="stylesheet"  href="css/details/dark.css"  media="(prefers-color-scheme: dark)"/>
+        <!-- font-awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <title>Details</title>
+    </head>
+<body>
+        <!-- nav -->
+        <nav>
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="logo col-lg-2 col-sm-6 ">
+                        <img src="./images/logo.png" alt="">
+                    </div>
+                    <div class="links col-lg-7 " id="links">
+                        <span onclick="closenav()">&#935;</span>
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="shop.html">Product</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="chatbot.html">Chat</a>
+                    </div>
+                    <div class="butn col-lg col-md-6 col-sm-6 d-flex justify-content-end">
+                        <button onclick="openpage()">Sign Up</button>
+                        <i class="fa-sharp fa-solid fa-bars" onclick="opnenav()"></i>
+                    </div>
+                </div>
+            </div>    
+
+
+            <div class="colors" id="colors">
+                <h5 class="text-center mt-3 mb-3 text-uppercase fw-bold">color skins</h5>
+                <div class="color">
+                            <div class="dd">
+                                <div class="ogrn" onclick="orgncolor()"></div>
+                                <div class="blu" onclick="bluColor()"></div>
+                                <div class="gren" onclick="grenColor()"></div>
+                            </div>
+                            <div class="dd">
+                                <div class="red" onclick="redColor()"></div>
+                                <div class="ored" onclick="oredColor()"></div>
+                                <div class="lbne" onclick="lbueColor()"></div>
+                            </div>
+                </div>
+                <div class="toggle" onclick="dark()">
+                    <input type="checkbox" />
+                    <label for="toggleBtn">
+                        <img src="/images/sun.png" alt="sun icon"  class="icon sun" />
+                        <img src="/images/moon.png" alt="moon icon"  class="icon moon" />
+                    </label>
+                </div>
+                <button onclick="boxedbody()">boxed</button>
+                <span class="setng" onclick="opnecolor()">
+                    <i class="fa-solid fa-gear"></i>
+                </span>
+            </div>
+            <hr>
+        </nav>
+        <!-- end nav -->
+
+        <!-- Detail -->
+        <section class="detail">
+            <h2>product <span>detail</span></h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="img">
+                            <img src="images/black-headphones-digital-device.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="text">
+                            <h3>sony xtra wi210x</h3>
+                            <div class="stars-icons">
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <span>
+                                    <i class="fa-regular fa-message"></i> 46
+                                </span>
+                            </div>
+                            <h6>details</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nostrum maiores aliquam, 
+                                dolorum sequi laudantium debitis sapiente quod repellendus, nihil voluptatem, 
+                                distinctio doloremque sed? Hic saepe distinctio excepturi ducimus atque!
+                            </p>
+                            <div class="butn d-flex justify-content-between align-items-end">
+                                <div class="one">
+                                    <h6>quantity</h6>
+                                    <div>
+                                        <button id="decrement" onclick="stepper(this)"> - </button>
+                                        <input type="number" min="0" max="100" step="1" value="1" id="my-input" readonly>
+                                        <button id="increment" onclick="stepper(this)" > + </button>
+                                    </div>    
+                                </div>
+                                <div class="tow">
+                                    <h6>price</h6>
+                                    <span>$120</span>
+                                </div>
+                                <div class="three">
+                                    <a href="checkout.html"><button>order new</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end Detail -->
+
+        <!-- shop -->
+    <section class="shop p-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card1 one">
+                        <div class="img">
+                            <img src="./images/musec-headphone.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h5>beats 200x <span>$220</span></h5>
+                            <p>there are many things are needed to start the gadgets business</p>
+                            <div class="butn">
+                                <a href="./details.html"><button>add to cart</button></a>
+                                <span>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    (5.0)
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card1 tow">
+                        <div class="img">
+                            <img src="./images/headphones-dark-background-vector-removebg-preview.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h5>sony Xtra wi210x <span>$120</span></h5>
+                            <p>there are many things are needed to start the gadgets business</p>
+                            <div class="butn">
+                                <a href="./details.html"><button>add to cart</button></a>
+                                <span>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    (5.0)
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card1 three">
+                        <div class="img">
+                            <img src="./images/mouse-red.png" width="50%" alt="">
+                        </div>
+                        <div class="text">
+                            <h5>oculus VR smar232 <span>$99</span></h5>
+                            <p>there are many things are needed to start the gadgets business</p>
+                            <div class="butn">
+                                <a href="./details.html"><button>add to cart</button></a>
+                                <span>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    (5.0)
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card1 four">
+                        <div class="img">
+                            <img src="./images/whatch-whight.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h5>smartwatch screen<span>$150</span></h5>
+                            <p>there are many things are needed to start the gadgets business</p>
+                            <div class="butn">
+                                <a href="./details.html"><button>add to cart</button></a>
+                                <span>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    (5.0)
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="see mt-5 text-center">
+                <a href="shop.html">
+                    <button>see more
+                    <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- end shop -->
+
+        <!-- footer -->
+        <footer>
+                <div class="container">
+                    <div class="row pb-5 ">
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="links one">
+                                <h4>company logo</h4>
+                                <h5>newsletters sign up</h5>
+                                <h6>sign up for least news & offers</h6>
+                                <div class="inp">
+                                    <input type="email" placeholder="your email address">
+                                    <span>
+                                        <i class="fa-sharp fa-solid fa-envelope"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="links tow">
+                                <h4>categories</h4>
+                                <a href="#">headphones</a>
+                                <a href="#">smart watch</a>
+                                <a href="#">mouse</a>
+                                <a href="#">camera</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="links three">
+                                <h4>about us</h4>
+                                <a href="#">license</a>
+                                <a href="#">policy</a>
+                                <a href="#">terms of use</a>
+                                <a href="#">help</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="links four">
+                                <h4>contact us</h4>
+                                <a href="#">+2 01062026826</a>
+                                <a href="#">mohamedmoawad531@icloud.com</a>
+                                <div class="iconss d-flex justify-content-between mt-5">
+                                    <span class="face">
+                                        <i class="fa-brands fa-facebook"></i>
+                                    </span>
+                                    <span class="linkd">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </span>
+                                    <span class="insta">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </span>
+                                    <span class="yout">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </span>
+                                    <span class="whats">
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <p>copyright pebisnis <span>( Mohamed Moawad )</span> all right reserved</p>
+                    </div>
+                </div>
+        </footer>
+        <!-- end footer -->
+
+
+            
+    <div class="loader" id="load">
+        <div class="ring">
+            <span>loading...</span>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/details-min.js"></script>
+</body>
+</html>

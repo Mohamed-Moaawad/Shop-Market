@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- style -->
+    <link rel="stylesheet" href="css/style/style.css" media="(prefers-color-scheme: light)">
+    <!-- dark mood -->
+    <link rel="stylesheet" href="css/style/dark.css" media="(prefers-color-scheme: dark)"/>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Mohamed Moawad</title>
+</head>
+<body>
+    <!-- header -->
+    <header class="position-relative overflow-hidden" id="header">
+        <div class="container">
+            <!-- nav -->
+            <nav>
+                <div class="row d-flex align-items-center">
+                    <div class="logo col-lg-2 col-sm-6 ">
+                        <img src="./images/logo.png" alt="">
+                    </div>
+                    <div class="links col-lg-7 " id="links">
+                        <span onclick="closenav()">&#935;</span>
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="shop.html">Product</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="chatbot.html">Chat</a>
+                    </div>
+                    <div class="butn col-lg-3 col-sm-6 d-flex justify-content-end">
+                        <button onclick="openpage()">Sign Up</button>
+                        <i class="fa-sharp fa-solid fa-bars" onclick="opnenav()"></i>
+                    </div>
+                </div>
+            </nav>
+            <!-- end nav -->
+
+            <!-- landing -->
+            <div class="landing position-relative">
+                <div class="row d-flex align-items-center position-relative">
+                    <div class="down">
+                        <a href="#shop"><i class="fa-solid fa-angles-down fs-2"></i></a>
+                    </div>
+                    <div class="col-lg-7 col-md-6 col-sm-12">
+                        <div class="text" data-aos="fade-right">
+                            <h1>find your best <span>tech gadgets</span></h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, voluptatum? Maxime molestiae eum, 
+                                repellendus inventore non nulla minus repudiandae quos, perferendis tempore 
+                                quod dolores veniam in. Eveniet modi qui ut.
+                            </p>
+                            <a href="shop.html">
+                                <button>
+                                    order your gadgets 
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6 col-sm-12">
+                        <div class="img" data-aos="fade-up" data-aos-duration="3000">
+                            <div class="cam">
+                                <img src="./images/تنزيل-removebg-preview.png" alt="">
+                                <div class="text">
+                                    <h6>italin pizza</h6>
+                                    <span>$9.50</span>
+                                </div>
+                            </div>
+                            <div class="emoje">
+                                <img src="./images/emoje-1.jpg" alt="">
+                                <div class="texti">
+                                    <h6>Our Happy Customer</h6>
+                                    <span>9.4 (1,989 Reviews)</span>
+                                </div>
+                            </div>
+                            <div class="big-img" id="daira">
+                                <div>
+                                    <img src="./images/./landing.png" width="500px"  alt="">
+                                    
+                                </div>
+                            </div>
+                            <div class="small-img">
+                                <img class="mess" width="150px" src="./images/avioes-de-papel-voando-sobre-o-ceu-pelo-conceito-de-coracao-animacao-em-stop-motion-origami-aviao-de-papel-voando-de-linha-fluida-aviao-de-papel-branco-sobre-fundo-preto-conceito-de-inovacao-correio-c.png" alt="">
+                            <img class="small-1" width="100px" src="images/black-headphone.png" alt="">
+                            <img class="small-2" width="130px" src="images/mouse-blue.png" alt="">
+                            <img class="small-3" width="100px" src="images/whatch-blue.png" alt="">
+                            <img class="small-4" width="100px" src="images/./تنزيل-removebg-preview.png" alt="">
+                            </div>
+                        
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- end landing -->
+
+            <div class="dory dor1"></div>
+            <div class="dory dor2"></div>
+        </div>
+
+        <div class="colors" id="colors">
+            <h5 class="text-center mt-3 mb-3 text-uppercase fw-bold">color skins</h5>
+            <div class="color">
+                        <div class="dd">
+                            <div class="ogrn" onclick="orgncolor()"></div>
+                            <div class="blu" onclick="bluColor()"></div>
+                            <div class="gren" onclick="grenColor()"></div>
+                        </div>
+                        <div class="dd">
+                            <div class="red" onclick="redColor()"></div>
+                            <div class="ored" onclick="oredColor()"></div>
+                            <div class="lbne" onclick="lbueColor()"></div>
+                        </div>
+            </div>
+            <div class="toggle" onclick="dark()">
+                <input type="checkbox" />
+                <label for="toggleBtn">
+                    <img src="/images/sun.png" alt="sun icon"  class="icon sun" />
+                    <img src="/images/moon.png" alt="moon icon"  class="icon moon" />
+                </label>
+            </div>
+            <button onclick="boxedbody()">boxed</button>
+            <span class="setng" onclick="opnecolor()">
+                <i class="fa-solid fa-gear"></i>
+            </span>
+        </div>
+
+        <!-- form -->
+        <section class="my-form" id="my-form">
+            <i class="fa-sharp fa-solid fa-arrow-right-from-bracket" onclick="clospage()"></i>
+            <div class="one-1">
+                <form action="">
+                    <div class="container cont1">
+                        <h3 onclick="closform()">sign up</h3>
+                        <div class="inp">
+                            <input type="text" placeholder="username">
+                            <i class="fa-sharp fa-solid fa-user"></i>
+                        </div>
+                        <div class="inp">
+                            <input type="email" placeholder="email">
+                            <i class="fa-sharp fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="inp">
+                            <input type="password" placeholder="password">
+                            <i class="fa-sharp fa-solid fa-lock"></i>
+                        </div>
+                        <button>sign up</button>
+                    </div>
+
+                    <div class="container cont2" id="myform">
+                        <h3 onclick="openform()">log in</h3>
+                        <div class="inp">
+                            <input type="text" placeholder="username">
+                            <i class="fa-sharp fa-solid fa-user"></i>
+                        </div>
+                        <div class="inp">
+                            <input type="password" placeholder="password">
+                            <i class="fa-sharp fa-solid fa-lock"></i>
+                        </div>
+                            <button>login</button>
+                        <p>forgot password <span>or</span> sign up</p>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- end form -->
+    </header>
+    <!-- end header -->
+
+    <!-- passions -->
+    <section class="passions pt-5">
+        <div class="container">
+            <h2 class="text-center mt-5 mb-5"> <span>gadgets with</span> a new passions</h2>
+            <div class="row pt-5">
+                <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+                    <div class="icon" data-aos="flip-left">
+                        <div class="img-icon one">
+                            <img src="./images/icon-madel.png" alt="">
+                        </div>
+                        
+                        <div class="text">
+                            <h4>secure payment</h4>
+                            <p>it can be very secure path to earn good money 
+                                and make you very successful ceative
+                                antreperneur
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center ">
+                    <div class="icon" data-aos="flip-down">
+                        <div class="img-icon tow">
+                            <img src="./images/icon-car.png" alt="">
+                        </div>
+                        
+                        <div class="text">
+                            <h4>free delivery</h4>
+                            <p>it can be very secure path to earn good money 
+                                and make you very successful ceative
+                                antreperneur
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+                    <div class="icon" data-aos="flip-right">
+                        <div class="img-icon three">
+                                <img src="./images/verified-300x300-removebg-preview.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h4>quality gadgets</h4>
+                            <p>it can be very secure path to earn good money 
+                                and make you very successful ceative
+                                antreperneur
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end passions -->
+
+    <!-- shop -->
+    <section class="shop p-5 mb-5 pb-5" id="shop">
+        <div class="container">
+            <h2 class="text-center mb-5 pb-5"><span>best selling</span> products</h2>
+            <div class="row mt-5 pt-5">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="shop.html">
+                        <div class="card1 one" data-aos="zoom-in-right">
+                            <div class="img">
+                                <img src="./images/musec-headphone.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h5>beats 200x <span>$220</span></h5>
+                                <p>there are many things are needed to start the gadgets business</p>
+                                <div class="butn">
+                                    <!-- <a href="./details.html"><button>add to cart</button></a> -->
+                                    <span>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        (5.0)
+                                    </span>
+                                    <div class="pluses">
+                                        <i class="fa-sharp fa-solid fa-circle-plus plus"></i>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                    </a>    
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="shop.html">
+                        <div class="card1 tow"  data-aos="zoom-in-down">
+                            <div class="img">
+                                <img src="./images/headphones-dark-background-vector-removebg-preview.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h5>sony Xtra wi210x <span>$120</span></h5>
+                                <p>there are many things are needed to start the gadgets business</p>
+                                <div class="butn">
+                                    <!-- <a href="./details.html"><button>add to cart</button></a> -->
+                                    <span>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        (5.0)
+                                    </span>
+                                    <div class="pluses">
+                                        <i class="fa-sharp fa-solid fa-circle-plus plus"></i>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="shop.html">
+                        <div class="card1 three"  data-aos="zoom-in-up">
+                            <div class="img">
+                                <img src="./images/mouse-red.png" width="50%" alt="">
+                            </div>
+                            <div class="text">
+                                <h5>oculus VR smar232 <span>$99</span></h5>
+                                <p>there are many things are needed to start the gadgets business</p>
+                                <div class="butn">
+                                    <!-- <a href="./details.html"><button>add to cart</button></a> -->
+                                    <span>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        (5.0)
+                                    </span>
+                                    <div class="pluses">
+                                        <i class="fa-sharp fa-solid fa-circle-plus plus"></i>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="shop.html">
+                        <div class="card1 four" data-aos="zoom-in-left">
+                            <div class="img">
+                                <img src="./images/whatch-whight.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h5>smartwatch screen<span>$150</span></h5>
+                                <p>there are many things are needed to start the gadgets business</p>
+                                <div class="butn">
+                                    <!-- <a href="./details.html"><button>add to cart</button></a> -->
+                                    <span>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        (5.0)
+                                    </span>
+                                    <div class="pluses">
+                                        <i class="fa-sharp fa-solid fa-circle-plus plus"></i>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="see mt-5 text-center">
+                <a href="shop.html">
+                    <button>see more
+                    <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- end shop -->
+    <!-- about -->
+    <section class="proo pb-5 pt-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-6 col-sm-12 mb-5 position-relative">
+                    <div class="img" data-aos="fade-right">
+                        <img src="images/screencapture-behance-net-galle4-removebg-preview.png" alt="">
+                        <span>
+                            <i class="fa-sharp fa-solid fa-angle-right"></i>
+                        </span>
+                        <div class="ditl">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur 
+                                adipisicing elit. Quidem, maxime nulla? 
+                                Quod magnam sunt, cumque consectetur, 
+                                minima sit rerum amet beatae velit veniam maxime. 
+                                Veniam cum porro eveniet enim suscipit.
+                            </p>
+                            <div class="devl d-flex justify-content-between">
+                                <h5>gloria rose</h5>
+                                <div class="stars-icons">
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <h6>12 reviews at Yelp</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg 7 col-md-6 col-sm-12 mt-5">
+                    <div class="text" data-aos="flip-right">
+                        <h4>customer's Reviews</h4>
+                        <h2>what our customer's say
+                            about us ?
+                        </h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing 
+                            elit. Quia esse obcaecati earum quos aperiam est 
+                            veritatis libero unde, debitis fugit pariatur asperiores 
+                            repudiandae nemo iste molestiae provident voluptates 
+                            tempore dolorem repellat rem, culpa cum excepturi. Nisi 
+                            
+                            distinctio fugiat quas, nesciunt dolor qui, 
+                            <br>
+                            <br>
+                            tempora odit 
+                            ea vero quasi perferendis dolorem aliquam asperiores cumque 
+                            corporis sequi a. Veritatis facere error debitis, laudantium 
+                            perspiciatis cupiditate dolore, aliquam, iusto vitae sit 
+                            exercitationem accusamus quidem 
+                            ducimus eum minus numquam optio sed. Ea iusto voluptatem quos.
+                        </p>
+                        <button>
+                            write your assessment
+                            <span>
+                                <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end about -->
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/bLZHcnuqscU" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+    </iframe>
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    <footer>
+        <div class="container" >
+            <div class="row pb-5 ">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="links one">
+                        <h4>company logo</h4>
+                        <h5>newsletters sign up</h5>
+                        <h6>sign up for least news & offers</h6>
+                        <div class="inp">
+                            <input type="email" placeholder="your email address">
+                            <span>
+                                <i class="fa-sharp fa-solid fa-envelope"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="links tow">
+                        <h4>categories</h4>
+                        <a href="#">headphones</a>
+                        <a href="#">smart watch</a>
+                        <a href="#">mouse</a>
+                        <a href="#">camera</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="links three">
+                        <h4>about us</h4>
+                        <a href="#">license</a>
+                        <a href="#">policy</a>
+                        <a href="#">terms of use</a>
+                        <a href="#">help</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="links four">
+                        <h4>contact us</h4>
+                        <a href="#">+2 01062026826</a>
+                        <a href="#">mohamedmoawad531@icloud.com</a>
+                        <div class="iconss d-flex justify-content-between mt-5">
+                            <span class="face">
+                                <i class="fa-brands fa-facebook"></i>
+                            </span>
+                            <span class="linkd">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </span>
+                            <span class="insta">
+                                <i class="fa-brands fa-instagram"></i>
+                            </span>
+                            <span class="yout">
+                                <i class="fa-brands fa-youtube"></i>
+                            </span>
+                            <span class="whats">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>copyright pebisnis <span>( Mohamed Moawad )</span> all right reserved</p>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+
+    <div class="loader" id="load">
+        <div class="ring">
+            <span>loading...</span>
+        </div>
+    </div>
+
+    <iframe width="560" 
+    height="315" src="https://www.youtube.com/embed/__CRWE-L45k" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+    </iframe>
+    <iframe width="560" 
+    height="315" src="https://www.youtube.com/embed/__CRWE-L45k" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+    </iframe>
+    <iframe width="560" 
+    height="315" src="https://www.youtube.com/embed/__CRWE-L45k" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+    </iframe>
+    <iframe width="560" 
+    height="315" src="https://www.youtube.com/embed/__CRWE-L45k" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+    </iframe>
+    <iframe width="560" 
+    height="315" src="https://www.youtube.com/embed/__CRWE-L45k" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+    </iframe>
+
+
+    <div class="online">
+        <div class="container d-flex justify-content-center align-items-center flex-column w-100 h-100">
+            <div>
+                <h2>
+                    <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+                    offline 
+                </h2>    
+                <ul>
+                        <li>checking the connection</li>
+                        <li>checking the proxy and firewall</li>
+                        <li>running window network diagnostics</li>
+                </ul>
+                <button class="reload">reload</button>
+            </div>    
+        </div>
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/min.js"></script>
+        <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({duration:1500});
+    </script>
+</body>
+</html>

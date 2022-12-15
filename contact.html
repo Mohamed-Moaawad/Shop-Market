@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- style -->
+        <link rel="stylesheet" href="css/contact/contact.css">
+        <!-- dark mood -->
+    <link  rel="stylesheet"  href="css/contact/dark.css"  media="(prefers-color-scheme: dark)"/>
+        <!-- font-awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <!-- wow -->
+        <link rel="stylesheet" href="/WOW-master/css/libs/animate.css">
+        <title>contact us</title>
+
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("vdPBPu9_knEr_zS-M");
+        })();
+    </script>
+            
+        </head>
+<body>
+        <!-- nav -->
+        <nav> 
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="logo col-lg-2 col-sm-6 ">
+                        <img src="./images/logo.png" alt="">
+                    </div>
+                    <div class="links col-lg-7 " id="links">
+                        <span onclick="closenav()">&#935;</span>
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="shop.html">Product</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="chatbot.html">Chat</a>
+                    </div>
+                    <div class="butn col-lg-3 col-sm-6 d-flex justify-content-end">
+                        <button onclick="openpage()">Sign Up</button>
+                        <i class="fa-sharp fa-solid fa-bars" onclick="opnenav()"></i>
+                    </div>
+                </div>
+            </div>   
+            
+            
+            <div class="colors" id="colors">
+                <h5 class="text-center mt-3 mb-3 text-uppercase fw-bold">color skins</h5>
+                <div class="color">
+                            <div class="dd">
+                                <div class="ogrn" onclick="orgncolor()"></div>
+                                <div class="blu" onclick="bluColor()"></div>
+                                <div class="gren" onclick="grenColor()"></div>
+                            </div>
+                            <div class="dd">
+                                <div class="red" onclick="redColor()"></div>
+                                <div class="ored" onclick="oredColor()"></div>
+                                <div class="lbne" onclick="lbueColor()"></div>
+                            </div>
+                </div>
+                <div class="toggle" onclick="dark()">
+                    <input type="checkbox" />
+                    <label for="toggleBtn">
+                        <img src="/images/sun.png" alt="sun icon"  class="icon sun" />
+                        <img src="/images/moon.png" alt="moon icon"  class="icon moon" />
+                    </label>
+                </div>
+                <button onclick="boxedbody()">boxed</button>
+                <span class="setng" onclick="opnecolor()">
+                    <i class="fa-solid fa-gear"></i>
+                </span>
+            </div>
+            <hr>
+        </nav>
+        <!-- end nav -->
+
+        <section class="pt-5 pb-5">
+            <h2 class="text-center"><span>contact</span> us</h2>
+            <div class="container pt-5 pb-4">
+                <div class="row">
+                    <div class="co-12 mb-5">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252675.98914268872!2d31.59545204267999!3d29.99090324605229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583cc75436d909%3A0x7f921d4528ec3e03!2z2KfZhNiq2KzZhdi5INin2YTYrtin2YXYs9iMINmF2K3Yp9mB2LjYqSDYp9mE2YLYp9mH2LHYqeKArA!5e1!3m2!1sar!2seg!4v1670505744523!5m2!1sar!2seg" width="100%" 
+                        height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+                        class="wow bounceIn"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="col-lg-5 col-md-6 col-sm-12">
+                        <div class="img wow wobble">
+                            <img class="wave1" src="./images/wave-1.png" alt="">
+                            <img class="wave2" src="./images/wave-2.png" alt="">
+                            <img class="man" src="/images/Man-with-laptop-removebg-preview.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-6 col-sm-12" >
+
+
+                        <form action="" class="d-flex flex-column justify-content-center pb-5">
+                            <label for="">full name</label>
+                            <input type="text" placeholder="Full Name" id="fullname" name="full_name">
+                            <label for="">emali</label>
+                            <input type="email" placeholder="email" id="email_id" name="email" >
+                            <label for="">message</label>
+                            <textarea name="message" id="message" cols="30" rows="3" placeholder="write a message"></textarea>
+                            <div>
+                                <button onclick="sendMail()">send messgae</button>
+                            </div>
+                        </form>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer>
+            <div class="container">
+                <div class="row pb-5 ">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="links one">
+                            <h4>company logo</h4>
+                            <h5>newsletters sign up</h5>
+                            <h6>sign up for least news & offers</h6>
+                            <div class="inp">
+                                <input type="email" placeholder="your email address">
+                                <span>
+                                    <i class="fa-sharp fa-solid fa-envelope"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="links tow">
+                            <h4>categories</h4>
+                            <a href="#">headphones</a>
+                            <a href="#">smart watch</a>
+                            <a href="#">mouse</a>
+                            <a href="#">camera</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="links three">
+                            <h4>about us</h4>
+                            <a href="#">license</a>
+                            <a href="#">policy</a>
+                            <a href="#">terms of use</a>
+                            <a href="#">help</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="links four">
+                            <h4>contact us</h4>
+                            <a href="#">+2 01062026826</a>
+                            <a href="#">mohamedmoawad531@icloud.com</a>
+                            <div class="iconss d-flex justify-content-between mt-5">
+                                <span class="face">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </span>
+                                <span class="linkd">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </span>
+                                <span class="insta">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </span>
+                                <span class="yout">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </span>
+                                <span class="whats">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>copyright pebisnis <span>( Mohamed Moawad )</span> all right reserved</p>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+
+
+        
+    <div class="loader" id="load">
+        <div class="ring">
+            <span>loading...</span>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/contact.js"></script>
+    <!-- wow -->
+    <script src="/WOW-master/dist/wow.min.js"></script>
+        <script>
+        new WOW().init();
+        </script>
+</body>
+</html>

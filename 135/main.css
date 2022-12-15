@@ -1,0 +1,16 @@
+div {
+  font-size: 24px;
+  border-radius: 12px;
+  padding: 20px;
+  font-family: sans-serif;
+  
+  margin: 10px;
+  line-height: 40px;
+}
+
+.light,
+.dark {
+  font-weight: bold;
+  text-align: center;
+  font-size: 50px;
+}
